@@ -1,0 +1,9 @@
+Building Feitebi
+
+See doc/readme-qt.rst for instructions on building Feitebi QT,
+the intended-for-end-users, nice-graphical-interface, reference
+implementation of Feitebi.
+
+See doc/build-*.txt for instructions on building feitebid,
+the intended-for-services, no-graphical-interface, reference
+implementation of Feitebi.
