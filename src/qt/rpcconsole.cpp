@@ -34,8 +34,9 @@ const struct {
     {NULL, NULL}
 };
 
-/* Object for executing console RPC commands in a separate thread.
-*/
+/**
+ * Object for executing console RPC commands in a separate thread.
+ */
 class RPCExecutor: public QObject
 {
     Q_OBJECT
@@ -50,7 +51,7 @@ signals:
 
 void RPCExecutor::start()
 {
-   // Nothing to do
+   // Nothing to do this time.
 }
 
 /**
