@@ -176,6 +176,7 @@ CBlock* CreateNewBlock(CWallet* pwallet, bool fProofOfStake, int64_t* pFees)
 
         // Priority order to process transactions
         list<COrphan> vOrphan; // list memory doesn't move
+        
         map<uint256, vector<COrphan*> > mapDependers;
 
         // This vector will be sorted into a priority queue:
