@@ -16,7 +16,7 @@ static uint64_t nAccountingEntryNumber = 0;
 extern bool fWalletUnlockStakingOnly;
 
 //
-// CWalletDB
+// CWalletDB for feitebi
 //
 
 bool CWalletDB::WriteName(const string& strAddress, const string& strName)
@@ -114,6 +114,7 @@ DBErrors
 CWalletDB::ReorderTransactions(CWallet* pwallet)
 {
     LOCK(pwallet->cs_wallet);
+    
     // Old wallets didn't have any defined order for transactions
     // Probably a bad idea to change the output of this
 
