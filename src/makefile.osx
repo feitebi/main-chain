@@ -24,7 +24,9 @@ USE_UPNP:=1
 LIBS= -dead_strip
 
 ifdef STATIC
+
 # Build STATIC if you are redistributing the feitebid binary
+
 LIBS += \
  $(DEPSDIR)/lib/db48/libdb_cxx-4.8.a \
  $(DEPSDIR)/lib/libboost_system-mt.a \
