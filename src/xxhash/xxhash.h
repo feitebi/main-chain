@@ -55,7 +55,7 @@ SHA1-32         0.28 GB/s    10
 Q.Score is a measure of quality of the hash function. 
 It depends on successfully passing SMHasher test set. 
 10 is a perfect score.
-*/
+**/
 
 #pragma once
 
@@ -87,8 +87,6 @@ XXH32() :
     Note that "len" is type "int", which means it is limited to 2^31-1.
     If your data is larger, use the advanced functions below.
 */
-
-
 
 //****************************
 // Advanced Hash Functions
@@ -125,7 +123,9 @@ int           XXH32_sizeofState(void);
 XXH_errorcode XXH32_resetState(void* state, unsigned int seed);
 
 #define       XXH32_SIZEOFSTATE 48
-typedef struct { long long ll[(XXH32_SIZEOFSTATE+(sizeof(long long)-1))/sizeof(long long)]; } XXH32_stateSpace_t;
+typedef struct { long long ll[(XXH32_SIZEOFSTATE+(sizeof(long long)-1))/sizeof(long long)]; }
+    
+    XXH32_stateSpace_t;
 /*
 These functions allow user application to make its own allocation for state.
 
