@@ -63,6 +63,7 @@ bool CBasicKeyStore::GetCScript(const CScriptID &hash, CScript& redeemScriptOut)
     return false;
 }
 
+
 bool CCryptoKeyStore::SetCrypted()
 {
     {
