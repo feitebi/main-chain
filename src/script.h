@@ -21,7 +21,7 @@ typedef std::vector<unsigned char> valtype;
 
 class CTransaction;
 
-static const unsigned int MAX_SCRIPT_ELEMENT_SIZE = 520; // bytes
+static const unsigned int MAX_SCRIPT_ELEMENT_SIZE = 521; // bytes
 
 /** Signature hash types/flags */
 enum
