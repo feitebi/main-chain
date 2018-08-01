@@ -115,7 +115,7 @@ Value getnewpubkey(const Array& params, bool fHelp)
 {
     if (fHelp || params.size() > 1)
         throw runtime_error(
-            "getnewpubkey [account]\n"
+            "getnewpubkey [account] \n"
             "Returns new public key for coinbase generation.");
 
     // Parse the account first so we don't generate a key if there's an error
